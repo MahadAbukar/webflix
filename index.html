@@ -3,59 +3,226 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <style>
+    body{
+      background-color: #000;
+    }
     .header{
       background: #000;
       color: #fff;
       overflow: auto;
       padding: 0 25px 0 25px;
     }
+    .header a{
+      font-family: serif;
+      text-decoration: none;
+      color: #fff;
+    }
+    .header a:hover{
+      color: red;
+    }
+    span{
+      color: red;
+    }
     .logo{
       float: left;
       background: red;
       display: inline-block;
       margin-right: 25px;
+      padding: 20px;
     }
     .leftMenu{
       float: left;
-      background: blue;
       display: inline-block;
+      text-transform: none;
     }
     .leftMenu ul{
       list-style: none;
       padding: 0;
       margin: 0;
     }
+    .leftMenu ul li{
+      display: inline-block;
+      padding: 20px;
+    }
     .rightMenu{
-      background: yellow;
       display: inline-block;
       float: right;
     }
+    .rightMenu ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .rightMenu ul li{
+      display: inline-block;
+      padding: 20px;
+    }
+    .container{
+  background: -webkit-linear-gradient(45deg, rgba(231,31,17,0.4) 0%,#000000 95%), url(https://www.hdwallpapers.in/download/avengers_infinity_war_4k_8k_2-wide.jpg) no-repeat center center;
+  padding: 200px 25px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.content{
+ width: 40%;
+}
+.content h6{
+  font-weight: 300px;
+  color: #fff;
+  margin: 0;
+}
+.content h1{
+  font-family: serif;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+}
+.content h3{
+  font-family: sans-serif;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 300;
+  margin-top: 20px !important;
+}
+.content p{
+  font-family: sans-serif;
+  font-weight: 400px;
+  font-size: 18px;
+  margin: 0;
+  color: #fff;
+}
+#button1{
+  display: inline-block;
+  padding: 13px 20px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid black;
+}
+#button2{
+  display: inline-block;
+  padding: 13px 20px;
+  border: 2px solid black;
+  color: #fff;
+  cursor: pointer;
+}
+#button1:hover, #button2:hover{
+  background: rgba(0,0,0,0.7);
+}
+#videoSection{
+  width: 100%;
+}
+.row{
+  width: 100%;
+  font-size: 0;
+  margin: 10px 0 20px 0;
+}
+.videoBoxes{
+  width: 24%;
+  height: 200px;
+  background: red;
+  margin: 0.5%;
+  display: inline-block;
+  font-size: 16px;
+}
+.video1{
+  background: -webkit-linear-gradient(45deg, rgba(231,31,17,0.4) 0%,#000000 95%), url(https://www.the-institute-of-light.com/wp-content/uploads/2018/03/black-panther-poster-horizontal-1-e1520524614162.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.video2{
+  background: -webkit-linear-gradient(45deg, rgba(231,31,17,0.4) 0%,#000000 95%), url(https://lumiere-a.akamaihd.net/v1/images/mock_theincredibles2_e5c934bb.jpeg?region=0,0,2048,2709) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.video3{
+  background: -webkit-linear-gradient(45deg, rgba(231,31,17,0.4) 0%,#000000 95%), url(https://i.pinimg.com/originals/f8/f2/70/f8f270078d59c44b5b95bf07bce218df.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.video4{
+  background: -webkit-linear-gradient(45deg, rgba(231,31,17,0.4) 0%,#000000 95%), url(https://pbs.twimg.com/media/DFX7NK5UMAEdvmk.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
     </style>
     <title>Welcome to Webflix</title>
   </head>
   <body>
 
     <div class="header">
-      <div class="logo">logo</div>
+      <div class="logo">webflix</div>
       <div class="leftMenu">
         <ul>
-          <li><a href="#">Browse</a></li>
+          <li><a href="#"><span>Browse</span></a></li>
           <li><a href="#">Kids</a></li>
           <li><a href="#">DVDs</a></li>
         </ul>
       </div>
-      <div class="rightMenu">right menu</div>
+      <div class="rightMenu">
+        <ul>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Bell</a></li>
+          <li><a href="#">Username</a></li>
+        </ul>
+      </div>
     </div>
     <div class="container">
-      <h6>small title</h6>
-      <h1>large title</h1>
-      <h3>medium title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda porro minima ad sequi labore! Libero vel autem placeat eligendi impedit nesciunt assumenda.</p>
-      <div>button 1</div>
-      <div>button 2</div>
+<div class="content">
+      <h6>Webflix Presents</h6>
+      <h1>Avengers: Infinity War</h1>
+      <h3>Coming November 3rd</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis odio, tenetur illo quae quas ipsa praesentium et error dolorum amet eum maiores commodi quisquam a blanditiis illum. Inventore, dolorem, obcaecati.</p>
+      <div id="button1">Watch Trailer</div>
+      <div id="button2">Read More</div>
     </div>
+  </div>
+
+  <div class="videoSection">
+    <div class="row">
+      <div class="videoBoxes video1">
+        Video
+      </div>
+      <div class="videoBoxes video2">
+        Video
+      </div>
+      <div class="videoBoxes video3">
+        Video
+      </div>
+      <div class="videoBoxes video4">
+        Video
+      </div>
+    </div>
+    <div class="row">
+      <div class="videoBoxes video3">
+        Video
+      </div>
+      <div class="videoBoxes video3">
+        Video
+      </div>
+      <div class="videoBoxes video3">
+        Video
+      </div>
+      <div class="videoBoxes video3">
+        Video
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>
+
